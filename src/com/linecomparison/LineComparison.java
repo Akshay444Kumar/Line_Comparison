@@ -31,10 +31,13 @@ public class LineComparison {
         double length1 = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
         double length2 = Math.sqrt(Math.pow((m2 - m1), 2) + Math.pow((n2 - n1), 2));
 
-        if (length1 == length2) {
+        if (length1 == length2){
             System.out.println("The lengths of two lines are equal.");
-        } else {
-            System.out.println("The lengths of two lines are NOT equal.");
+        } else if (length1>length2){
+            System.out.println("Line 1 is longer than Line 2.");
+        }
+        else {
+            System.out.println("Line 2 is longer than Line 1.");
         }
     }
 }
